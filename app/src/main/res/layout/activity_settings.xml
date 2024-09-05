@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Первый раздел - Exercises -->
+    <TextView
+        android:id="@+id/exercisesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercises"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/addExerciseBtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Add"
+        android:textColor="@android:color/white"
+        android:background="@drawable/main_buttons_background"
+        app:layout_constraintTop_toBottomOf="@id/exercisesLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/deleteExerciseBtn"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/deleteExerciseBtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Delete"
+        android:textColor="@android:color/white"
+        android:background="@drawable/main_buttons_background"
+        app:layout_constraintTop_toBottomOf="@id/exercisesLabel"
+        app:layout_constraintStart_toEndOf="@id/addExerciseBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="8dp"/>
+
+    <!-- Разделительная линия -->
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/addExerciseBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Второй раздел - Units -->
+    <TextView
+        android:id="@+id/unitsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Units"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/divider1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/kgBtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="KG"
+        android:textColor="@android:color/black"
+        android:background="@drawable/dialog_background"
+        app:layout_constraintTop_toBottomOf="@id/unitsLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/lbBtn"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/lbBtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="LB"
+        android:textColor="@android:color/black"
+        android:background="@drawable/dialog_background"
+        app:layout_constraintTop_toBottomOf="@id/unitsLabel"
+        app:layout_constraintStart_toEndOf="@id/kgBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="8dp"/>
+
+    <!-- Разделительная линия -->
+
+    <!-- Третий раздел - UI Color -->
+
+    <!-- Кнопки Save и Back -->
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Back"
+        android:textColor="@android:color/white"
+        android:background="@drawable/main_buttons_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

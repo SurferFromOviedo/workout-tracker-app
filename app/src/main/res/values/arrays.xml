@@ -1,0 +1,44 @@
+<!-- res/values/arrays.xml -->
+<resources>
+    <string-array name="body_parts">
+        <item>Any Body Part</item>
+        <item>Whole Body</item>
+        <item>Legs</item>
+        <item>Back</item>
+        <item>Chest</item>
+        <item>Shoulders</item>
+        <item>Biceps</item>
+        <item>Triceps</item>
+        <item>Core</item>
+        <item>Forearms</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>Any Category</item>
+        <item>Barbell</item>
+        <item>Bodyweight</item>
+        <item>Dumbbell</item>
+        <item>Machine</item>
+        <item>Cable</item>
+    </string-array>
+
+    <string-array name="sets">
+        <item>1st Set</item>
+        <item>2nd Set</item>
+        <item>3rd Set</item>
+        <item>4th Set</item>
+        <item>5th Set</item>
+        <item>Average</item>
+        <item>Maximal Weight</item>
+    </string-array>
+
+    <string-array name="time_period">
+        <item>1 Week</item>
+        <item>2 Weeks</item>
+        <item>1 Month</item>
+        <item>3 Months</item>
+        <item>6 Months</item>
+        <item>Year</item>
+        <item>All Time</item>
+    </string-array>
+</resources>

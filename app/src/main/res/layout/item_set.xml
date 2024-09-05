@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/weightEditText"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:hint="Weight"
+            android:inputType="numberDecimal"
+            android:background="@drawable/dialog_background"
+            android:paddingStart="16dp"
+            android:gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/unitToggleButton"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
+            android:background="@drawable/dialog_background"
+            android:text="KG"
+            android:textSize="10sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/repsEditText"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_weight="1"
+        android:hint="Reps"
+        android:inputType="number"
+        android:background="@drawable/dialog_background"
+        android:paddingStart="16dp"
+        android:gravity="center_vertical"/>
+</LinearLayout>

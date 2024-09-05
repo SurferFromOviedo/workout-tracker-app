@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Градиентная граница -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp"/>
+            <stroke
+                android:width="2dp"
+                android:color="@color/black"/>
+        </shape>
+    </item>
+
+    <!-- Белый фон с закругленными углами -->
+    <item android:left="4dp" android:right="4dp" android:top="4dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white"/>
+            <corners android:radius="16dp"/>
+        </shape>
+    </item>
+</layer-list>

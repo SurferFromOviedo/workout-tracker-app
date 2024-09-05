@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/dialog_background"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Exercises"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Spinner
+            android:id="@+id/spinnerBodyPart"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_background"
+            android:prompt="@string/select_body_part" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_background"
+            android:prompt="@string/select_category" />
+    </LinearLayout>
+
+    <!-- Поле для поиска упражнений -->
+    <EditText
+        android:id="@+id/searchExercises"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/dialog_background"
+        android:drawableEnd="@android:drawable/ic_menu_search"
+        android:paddingHorizontal="8dp"
+        android:textSize="16sp"
+        android:hint="Search exercises" />
+
+    <!-- RecyclerView для списка упражнений -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewExercises"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>
+

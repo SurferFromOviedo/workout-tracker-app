@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/dialog_background">
+
+    <com.skydoves.colorpickerview.AlphaTileView
+        android:id="@+id/alphaTileView"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        app:tileSize="20"
+        />
+
+    <com.skydoves.colorpickerview.ColorPickerView
+        android:id="@+id/colorPickerView"
+        android:layout_width="315dp"
+        android:layout_height="315dp"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        />
+
+    <com.skydoves.colorpickerview.sliders.BrightnessSlideBar
+        android:id="@+id/brightnessSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:selector_BrightnessSlider="@drawable/colorpickerview_wheel"
+        app:borderSize_BrightnessSlider="5"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:background="@drawable/main_buttons_background"/>
+
+        <Button
+            android:id="@+id/chooseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:text="Choose"
+            android:textColor="@android:color/white"
+            android:background="@drawable/main_buttons_background"/>
+    </LinearLayout>
+
+</LinearLayout>
+

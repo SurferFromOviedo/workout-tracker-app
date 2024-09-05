@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="workout_indicator_size">8dp</dimen>
+    <dimen name="workout_indicator_margin">2dp</dimen>
+    <dimen name="legend_item_margin">1dp</dimen>
+</resources>

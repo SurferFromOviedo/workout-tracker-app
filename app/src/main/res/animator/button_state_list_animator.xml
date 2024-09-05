@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Нажатое состояние -->
+    <item android:state_pressed="true">
+        <set>
+            <objectAnimator
+                android:propertyName="translationZ"
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="8dp" /> <!-- Значение тени при нажатии -->
+            <objectAnimator
+                android:propertyName="elevation"
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="8dp" /> <!-- Начальное значение тени -->
+        </set>
+    </item>
+
+    <!-- Обычное состояние -->
+    <item>
+        <set>
+            <objectAnimator
+                android:propertyName="translationZ"
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="0dp" /> <!-- Начальное значение тени -->
+            <objectAnimator
+                android:propertyName="elevation"
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="0dp" /> <!-- Значение тени при обычном состоянии -->
+        </set>
+    </item>
+
+</selector>

@@ -1,0 +1,14 @@
+<!-- res/drawable/round_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <size
+        android:width="56dp"
+        android:height="56dp" />
+    <stroke
+        android:width="1dp"
+        android:color="@color/black" />
+    <gradient
+        android:startColor="#61483b"
+        android:endColor="@color/colorPrimary"
+        android:angle="135"/>
+</shape>

@@ -1,0 +1,31 @@
+<!-- res/layout/item_exercise.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="2dp"
+    android:background="@drawable/dialog_background"
+    android:clickable="true">
+
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bodypartTextView"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/categoryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:textSize="14sp"/>
+</LinearLayout>
