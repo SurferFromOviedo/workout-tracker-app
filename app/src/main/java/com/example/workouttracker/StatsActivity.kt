@@ -371,7 +371,9 @@ class StatsActivity : AppCompatActivity(), ExerciseSelectionListener {
                                         estimated1RM = estimated1RMOfSet
                                     }
                                 }else{
-                                    estimated1RM = weight
+                                    if (weight > estimated1RM) {
+                                        estimated1RM = weight
+                                    }
                                 }
                             }
                         }
